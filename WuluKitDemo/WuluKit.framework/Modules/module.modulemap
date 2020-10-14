@@ -1,0 +1,6 @@
+framework module WuluKit {
+  umbrella header "WuluKit.h"
+
+  export *
+  module * { export * }
+}

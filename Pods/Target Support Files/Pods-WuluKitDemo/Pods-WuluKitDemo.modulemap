@@ -1,0 +1,6 @@
+framework module Pods_WuluKitDemo {
+  umbrella header "Pods-WuluKitDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
