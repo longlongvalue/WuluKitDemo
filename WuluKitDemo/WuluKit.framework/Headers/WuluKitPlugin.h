@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "WuluFMSHTraficCard.h"
 
 typedef void(^RegisterComplete)(NSError * _Nullable error);
 typedef void(^GetAppSign)(NSString * _Nonnull appid, NSString * _Nullable userid, NSString * _Nullable deviceToken, NSString * _Nonnull timestamp, NSString * _Nonnull appSignature, NSInteger keyIndex);
@@ -62,6 +63,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param userId 应用内登录用户唯一标识
 /// @param deviceToken 匿名用户的设备唯一标识
 - (instancetype)initialWithDelegate:(id<WuluKitPluginDelegate>)delegate appid:(NSString * _Nonnull)appid userId:(NSString * _Nullable)userId deviceToken:(NSString * _Nonnull)deviceToken;
+
+/// 获取App有权限读取的本机卡列表
++ (nullable NSArray <WuluFMSHTraficCard *>*)cardList;
 
 /// 显示交通卡整页列表页面
 /// @param parentVC WuluKit要显示的父控制器

@@ -38,19 +38,23 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		DA4D5h8jlJ/8lQyCTIlh9qeNyl0=
+		7uthaxFLS2EJx9U4JwBJjnf0KDE=
+		</data>
+		<key>Headers/WuluFMSHTraficCard.h</key>
+		<data>
+		wk5aigeSZemeS9k389UdPjcOsoo=
 		</data>
 		<key>Headers/WuluKit.h</key>
 		<data>
-		KMyAETIgKwDZb/yvh28cNcmWtnI=
+		krdpPBKkgC4GuxFnZZdIIl7x/DY=
 		</data>
 		<key>Headers/WuluKitPlugin.h</key>
 		<data>
-		vjoO1NdMSauRRg8qWEm+CdP3pVo=
+		1u8rJqyGqdg18kAFa53JU6Yayns=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Y0yd7YwGiYuZyI/H+KppfMo34xs=
+		c7StkkOb7NrBGH9Bx7od8u86QVQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,27 +62,27 @@
 		</data>
 		<key>WuluFMSHAddCardBeforeIntroduction.nib/objects-13.0+.nib</key>
 		<data>
-		2s76JXpE5CQpNIsYzEQ01G2FEro=
+		CdRFwWZmf3PoPi3WF3C4qm2TOIc=
 		</data>
 		<key>WuluFMSHAddCardBeforeIntroduction.nib/runtime.nib</key>
 		<data>
-		Kint6rlRuC/iTynx2O7bpLg1Ha0=
+		pHQvM7lhgDW379Cz4781ELKBAEo=
 		</data>
 		<key>WuluFMSHOpenCardFail.nib/objects-13.0+.nib</key>
 		<data>
-		6P/beSNJ3dWNKkoi9iWJBGPNo24=
+		ZztegRyMoTP63SJiv5+SmcIRcWc=
 		</data>
 		<key>WuluFMSHOpenCardFail.nib/runtime.nib</key>
 		<data>
-		EpR6GsWz0RwioKMUVmxlcN8wBZE=
+		ZKBuACoxSslpoFvBRWXP7PeoKc0=
 		</data>
 		<key>WuluFMSHSuccess.nib/objects-13.0+.nib</key>
 		<data>
-		TFoxCIMZ7Ce+yKtEh2LDJkY0EmA=
+		/VU9ZNqA+/KeX189sR+7fWC7Zs4=
 		</data>
 		<key>WuluFMSHSuccess.nib/runtime.nib</key>
 		<data>
-		/vTzQYopgP8BrBdNL83b4Cq7mko=
+		FpmgB32j86Haa9O2zHVgrVf/jQo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -175,33 +179,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DA4D5h8jlJ/8lQyCTIlh9qeNyl0=
+			7uthaxFLS2EJx9U4JwBJjnf0KDE=
 			</data>
 			<key>hash2</key>
 			<data>
-			GXbXmJjDLiJLXRt81L6xvIPdC8qfTPAeGDovS7t/IDo=
+			OhocAhSZdGQXrp04qNurltBWtj+KGZZlSDSkSMawkWw=
+			</data>
+		</dict>
+		<key>Headers/WuluFMSHTraficCard.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wk5aigeSZemeS9k389UdPjcOsoo=
+			</data>
+			<key>hash2</key>
+			<data>
+			zOPfGDKNnJtLsob7/bQ0a/f7/Y408FanVUsQsMUdlfE=
 			</data>
 		</dict>
 		<key>Headers/WuluKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KMyAETIgKwDZb/yvh28cNcmWtnI=
+			krdpPBKkgC4GuxFnZZdIIl7x/DY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ENMS86Y4mRoc41Rdj0ZtfC/mr7CmwPN3B5Y3yrZLiMM=
+			SyI94TnYl1qbFEeGosOVvZ21tTanunQfT4f42LaWt6A=
 			</data>
 		</dict>
 		<key>Headers/WuluKitPlugin.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vjoO1NdMSauRRg8qWEm+CdP3pVo=
+			1u8rJqyGqdg18kAFa53JU6Yayns=
 			</data>
 			<key>hash2</key>
 			<data>
-			0J6Yy31liPkKM29HucbtGTpVwc7o8hbO8qzfPLQ7gyc=
+			T5sECpVgR8Q+gKiMd+nStNi4WnW1IcY+OMSYaRJvtDo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -219,66 +234,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2s76JXpE5CQpNIsYzEQ01G2FEro=
+			CdRFwWZmf3PoPi3WF3C4qm2TOIc=
 			</data>
 			<key>hash2</key>
 			<data>
-			IS4VvgePyzc3ffmTDsZWGkAVAhGhtUYrT9yqtNOjsDM=
+			W69+LtClUpKtze/17C47UzIQpbHda8vbDcnTU+okA0o=
 			</data>
 		</dict>
 		<key>WuluFMSHAddCardBeforeIntroduction.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Kint6rlRuC/iTynx2O7bpLg1Ha0=
+			pHQvM7lhgDW379Cz4781ELKBAEo=
 			</data>
 			<key>hash2</key>
 			<data>
-			85wGusHq3fziqMbKIm0UY0mB27+u8yT+K115MWhDAoo=
+			ZI21Wnw7hPkIE3zefdBvC92vLz29n4SUamvlMFGAIxA=
 			</data>
 		</dict>
 		<key>WuluFMSHOpenCardFail.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6P/beSNJ3dWNKkoi9iWJBGPNo24=
+			ZztegRyMoTP63SJiv5+SmcIRcWc=
 			</data>
 			<key>hash2</key>
 			<data>
-			11k98kd4BqNlP/VRztu79G7JXQcvqu9foZ1fqb3KaJo=
+			r9y+diyEJZvCEpxOr3gCxhc2N9o0oCREGB4kuRwJZhg=
 			</data>
 		</dict>
 		<key>WuluFMSHOpenCardFail.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EpR6GsWz0RwioKMUVmxlcN8wBZE=
+			ZKBuACoxSslpoFvBRWXP7PeoKc0=
 			</data>
 			<key>hash2</key>
 			<data>
-			1lCpZRXtbPRBaPCVu2jG/AmFkIJEd6TrSTt+/ofDDFI=
+			xY3oQNWsbgEqISJ/AMFLoq0vL5H3drd2g7dJEBvahv0=
 			</data>
 		</dict>
 		<key>WuluFMSHSuccess.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TFoxCIMZ7Ce+yKtEh2LDJkY0EmA=
+			/VU9ZNqA+/KeX189sR+7fWC7Zs4=
 			</data>
 			<key>hash2</key>
 			<data>
-			iYmCcATyMk4xBMbshZht0FTKBySrFcv27cZpHKuVWhE=
+			TEG+EC9ys3ruOp/dhgqrkLiMcCQcHkfqaQWSdQmKlO8=
 			</data>
 		</dict>
 		<key>WuluFMSHSuccess.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/vTzQYopgP8BrBdNL83b4Cq7mko=
+			FpmgB32j86Haa9O2zHVgrVf/jQo=
 			</data>
 			<key>hash2</key>
 			<data>
-			y9DyVcQBXp5mKof9i0Y0MFgwmiNE6/lAMGdQLMapKbo=
+			Vxh8zpAXvhPpCqyKjWh/l4fby/xJTbxZxzAwNmLza/o=
 			</data>
 		</dict>
 	</dict>

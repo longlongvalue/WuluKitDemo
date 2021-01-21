@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import <WuluKit/WuluKitPlugin.h>
+#import <WuluKit/WuluFMSHTraficCard.h>
 
 //! Project version number for WuluKit.
 FOUNDATION_EXPORT double WuluKitVersionNumber;

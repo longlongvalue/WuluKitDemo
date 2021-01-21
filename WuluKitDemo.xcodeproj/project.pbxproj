@@ -10,10 +10,10 @@
 		97A47F2BA925CD229CA4086A /* libPods-WuluKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37537B58A91B01A0516ABDEC /* libPods-WuluKitDemo.a */; };
 		D4268F5725022241007E70DF /* IMG_2005.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D4268F5625022241007E70DF /* IMG_2005.JPG */; };
 		D4268F592502280F007E70DF /* njsmk_standard.png in Resources */ = {isa = PBXBuildFile; fileRef = D4268F582502280F007E70DF /* njsmk_standard.png */; };
+		D4586D7A255E34130040E837 /* WuluKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4586D78255E34130040E837 /* WuluKit.framework */; };
+		D4586D7B255E34130040E837 /* WuluKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4586D79255E34130040E837 /* WuluKitResource.bundle */; };
 		D45AC4C825011C3B00DDB5A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D471DFAA24D8F666006BF941 /* LaunchScreen.storyboard */; };
 		D467E3FF2521900D00801D4E /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D467E3FE2521900D00801D4E /* PhotosUI.framework */; };
-		D467E4022521909000801D4E /* WuluKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D467E4002521909000801D4E /* WuluKitResource.bundle */; };
-		D467E4032521909000801D4E /* WuluKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D467E4012521909000801D4E /* WuluKit.framework */; };
 		D471DF9E24D8F664006BF941 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D471DF9D24D8F664006BF941 /* AppDelegate.m */; };
 		D471DFA424D8F664006BF941 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D471DFA324D8F664006BF941 /* ViewController.m */; };
 		D471DFA724D8F664006BF941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D471DFA524D8F664006BF941 /* Main.storyboard */; };
@@ -42,9 +42,9 @@
 		8505C7130842F85684010A23 /* Pods-WuluKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuluKitDemo.release.xcconfig"; path = "Target Support Files/Pods-WuluKitDemo/Pods-WuluKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D4268F5625022241007E70DF /* IMG_2005.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_2005.JPG; sourceTree = "<group>"; };
 		D4268F582502280F007E70DF /* njsmk_standard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = njsmk_standard.png; sourceTree = "<group>"; };
+		D4586D78255E34130040E837 /* WuluKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WuluKit.framework; sourceTree = "<group>"; };
+		D4586D79255E34130040E837 /* WuluKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WuluKitResource.bundle; sourceTree = "<group>"; };
 		D467E3FE2521900D00801D4E /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
-		D467E4002521909000801D4E /* WuluKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WuluKitResource.bundle; sourceTree = "<group>"; };
-		D467E4012521909000801D4E /* WuluKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WuluKit.framework; sourceTree = "<group>"; };
 		D471DF9924D8F664006BF941 /* WuluKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WuluKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D471DF9C24D8F664006BF941 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D471DF9D24D8F664006BF941 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D467E4032521909000801D4E /* WuluKit.framework in Frameworks */,
+				D4586D7A255E34130040E837 /* WuluKit.framework in Frameworks */,
 				D467E3FF2521900D00801D4E /* PhotosUI.framework in Frameworks */,
 				97A47F2BA925CD229CA4086A /* libPods-WuluKitDemo.a in Frameworks */,
 			);
@@ -119,8 +119,8 @@
 		D471DF9B24D8F664006BF941 /* WuluKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D467E4012521909000801D4E /* WuluKit.framework */,
-				D467E4002521909000801D4E /* WuluKitResource.bundle */,
+				D4586D78255E34130040E837 /* WuluKit.framework */,
+				D4586D79255E34130040E837 /* WuluKitResource.bundle */,
 				D4268F582502280F007E70DF /* njsmk_standard.png */,
 				D4268F5625022241007E70DF /* IMG_2005.JPG */,
 				D471DFE824DAB283006BF941 /* WuluKitDemo.entitlements */,
@@ -229,7 +229,7 @@
 				D471DFA924D8F666006BF941 /* Assets.xcassets in Resources */,
 				D45AC4C825011C3B00DDB5A2 /* LaunchScreen.storyboard in Resources */,
 				D4268F592502280F007E70DF /* njsmk_standard.png in Resources */,
-				D467E4022521909000801D4E /* WuluKitResource.bundle in Resources */,
+				D4586D7B255E34130040E837 /* WuluKitResource.bundle in Resources */,
 				D4268F5725022241007E70DF /* IMG_2005.JPG in Resources */,
 				D471DFA724D8F664006BF941 /* Main.storyboard in Resources */,
 			);
