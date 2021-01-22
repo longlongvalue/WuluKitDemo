@@ -41,6 +41,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param telephone 手机号码
 - (void)giveUserRealNameInfoWithUserName:(NSString *)userRealName idCardNumber:(NSString *)IDCardNumber telephoe:(NSString *)telephone;
 
+/// 开卡成功通知协议
+/// @param faceNo 交通卡卡号
+- (void)openCardSuccessCallback:(NSString *)faceNo;
+
 @end
 
 @interface WuluKitPlugin : NSObject
@@ -57,6 +61,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 消费记录中是否显示“可在App中查看乘车消费记录”。默认0:不显示；1:显示
 @property (nonatomic, assign) NSInteger travelRecordsBanner;
 
+/// 设置环境，默认生产环境
+/// @param env 环境变量。1.QA  2.UAT
++ (void)setEnvironment:(NSString *)env;
+
 /// WuluKit初始化
 /// @param delegate 代理方
 /// @param appid 应用唯一标识
@@ -69,14 +77,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 显示交通卡整页列表页面
 /// @param parentVC WuluKit要显示的父控制器
-- (void)showFullPageWithParentController:(UINavigationController *_Nonnull)parentVC;
+- (void)showTraficCardsTablePageWithParentController:(UINavigationController *_Nonnull)parentVC;
 
 /// 显示交通卡腰线列表页面
 /// @param y 腰线页面要显示的顶部的最小Y坐标
 - (UIViewController *)showWaistLinePageWithMinY:(CGFloat)y;
 
-/// 刷新腰线页面
-- (void)refrshWaistLinePage;
+/// 显示添加交通卡页面
+/// @param parentVC WuluKit要显示的父控制器
+/// @param cxtCode 联名卡唯一标识
+- (NSError *)showAddTraficCardPageWithParentController:(UINavigationController *_Nonnull)parentVC andCxtCode:(NSString *)cxtCode;
 
 @end
 

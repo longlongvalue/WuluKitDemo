@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger, WuluKitActivationState) {
-     WuluKitCardActivationStateActivated, /// 活跃状态
-     WuluKitCardActivationStateRequiresActivation, /// 需要激活
-     WuluKitCardActivationStateActivating, /// 激活中
-     WuluKitCardActivationStateSuspended, /// 挂失
-     WuluKitCardActivationStateDeactivated /// 无效
+    WuluKitCardActivationStateActivated, /// 活跃状态
+    WuluKitCardActivationStateRequiresActivation, /// 需要激活
+    WuluKitCardActivationStateActivating, /// 激活中
+    WuluKitCardActivationStateSuspended, /// 挂失
+    WuluKitCardActivationStateDeactivated /// 无效
 };
 
 

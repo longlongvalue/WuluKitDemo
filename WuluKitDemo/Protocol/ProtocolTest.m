@@ -36,7 +36,7 @@
 
 #pragma mark - WuluKitPluginDelegate
 - (void)getAppSign:(GetAppSign)complete {
-    NSString *appid = @"101";
+    NSString *appid = @"102";
     NSString *userid = @"2";
     NSString *deviceToken = @"3";
     NSString *timestamp = [self currentDateStr];
