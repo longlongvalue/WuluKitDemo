@@ -18,8 +18,9 @@
 		D471DFBA24D8F82F006BF941 /* ProtocolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D471DFB924D8F82F006BF941 /* ProtocolTest.m */; };
 		D471DFBF24D907DE006BF941 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D471DFBE24D907DE006BF941 /* WXApiManager.m */; };
 		D471DFDD24DAA6DC006BF941 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D471DFDB24DAA6DC006BF941 /* RSAEncryptor.m */; };
+		D4B6315926004DD700C87446 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B6315826004DD700C87446 /* LoginVC.m */; };
+		D4C4D74126009E2A00B270B7 /* WuluKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C4D74026009E2A00B270B7 /* WuluKit.framework */; };
 		D4E2633025B99805003E3175 /* JointCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E2632F25B99805003E3175 /* JointCardVC.m */; };
-		D4E2634325B999F7003E3175 /* WuluKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E2634125B999F5003E3175 /* WuluKit.framework */; };
 		D4E2634425B999F7003E3175 /* WuluKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4E2634225B999F6003E3175 /* WuluKitResource.bundle */; };
 /* End PBXBuildFile section */
 
@@ -58,9 +59,11 @@
 		D471DFDC24DAA6DC006BF941 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
 		D471DFE824DAB283006BF941 /* WuluKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WuluKitDemo.entitlements; sourceTree = "<group>"; };
 		D471DFE924DAB2FA006BF941 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
+		D4B6315726004DD700C87446 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		D4B6315826004DD700C87446 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		D4C4D74026009E2A00B270B7 /* WuluKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WuluKit.framework; sourceTree = "<group>"; };
 		D4E2632E25B99805003E3175 /* JointCardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JointCardVC.h; sourceTree = "<group>"; };
 		D4E2632F25B99805003E3175 /* JointCardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JointCardVC.m; sourceTree = "<group>"; };
-		D4E2634125B999F5003E3175 /* WuluKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WuluKit.framework; sourceTree = "<group>"; };
 		D4E2634225B999F6003E3175 /* WuluKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WuluKitResource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4E2634325B999F7003E3175 /* WuluKit.framework in Frameworks */,
+				D4C4D74126009E2A00B270B7 /* WuluKit.framework in Frameworks */,
 				D467E3FF2521900D00801D4E /* PhotosUI.framework in Frameworks */,
 				97A47F2BA925CD229CA4086A /* libPods-WuluKitDemo.a in Frameworks */,
 			);
@@ -118,7 +121,8 @@
 		D471DF9B24D8F664006BF941 /* WuluKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D4E2634125B999F5003E3175 /* WuluKit.framework */,
+				D4C4D74026009E2A00B270B7 /* WuluKit.framework */,
+				D4B6315626004DC100C87446 /* LoginVC */,
 				D4E2634225B999F6003E3175 /* WuluKitResource.bundle */,
 				D471DFE824DAB283006BF941 /* WuluKitDemo.entitlements */,
 				D471DFDA24DAA6CD006BF941 /* RSAEncryptor */,
@@ -163,6 +167,15 @@
 				D471DFDB24DAA6DC006BF941 /* RSAEncryptor.m */,
 			);
 			path = RSAEncryptor;
+			sourceTree = "<group>";
+		};
+		D4B6315626004DC100C87446 /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				D4B6315726004DD700C87446 /* LoginVC.h */,
+				D4B6315826004DD700C87446 /* LoginVC.m */,
+			);
+			path = LoginVC;
 			sourceTree = "<group>";
 		};
 		D4E2632D25B997ED003E3175 /* JointCardVC */ = {
@@ -295,6 +308,7 @@
 				D471DFBF24D907DE006BF941 /* WXApiManager.m in Sources */,
 				D471DFBA24D8F82F006BF941 /* ProtocolTest.m in Sources */,
 				D4E2633025B99805003E3175 /* JointCardVC.m in Sources */,
+				D4B6315926004DD700C87446 /* LoginVC.m in Sources */,
 				D471DFDD24DAA6DC006BF941 /* RSAEncryptor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

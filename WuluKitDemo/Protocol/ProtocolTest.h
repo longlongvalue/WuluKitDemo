@@ -9,9 +9,21 @@
 #import <Foundation/Foundation.h>
 #import <WuluKit/WuluKit.h>
 
+typedef void(^Complete)(NSError * _Nullable error);
+
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol ProtocolTestDelegate <NSObject>
+
+- (void)showLoginView:(Complete)callback;
+
+@end
+
 @interface ProtocolTest : NSObject<WuluKitPluginDelegate>
+
+@property (nonatomic, assign) BOOL                      isLogin;
+
+@property (nonatomic, weak) id<ProtocolTestDelegate>    delegate;
 
 + (instancetype)shareInstance;
 

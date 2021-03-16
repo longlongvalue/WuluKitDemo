@@ -4,42 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>AlipaySDK.bundle/alipay_msp_back@2x.png</key>
-		<data>
-		9QmweA7IyncTPWZIOx5ECL2ne4o=
-		</data>
-		<key>AlipaySDK.bundle/alipay_msp_refresh@2x.png</key>
-		<data>
-		ivQn6LWpOB8BoUbNdxsIvfbJbuM=
-		</data>
-		<key>AlipaySDK.bundle/bar@2x.png</key>
-		<data>
-		ENmQmLXuSOxBy844XKkdTedcv2Y=
-		</data>
-		<key>AlipaySDK.bundle/bridge.js</key>
-		<data>
-		qRl+NWE9CzrLdlozla7OvSpq9e0=
-		</data>
-		<key>AlipaySDK.bundle/refresh@2x.png</key>
-		<data>
-		MrXCB0ZUwnx4+zfw1X2jzlNdDc4=
-		</data>
-		<key>AlipaySDK.bundle/refresh_click@2x.png</key>
-		<data>
-		Q5O/60AWCbG5LfvVC3+guPjpeFs=
-		</data>
-		<key>AlipaySDK.bundle/shutdown@2x.png</key>
-		<data>
-		Z3Jf5aw1lVPaKemSw8qXPabBLcw=
-		</data>
-		<key>AlipaySDK.bundle/shutdown_click@2x.png</key>
-		<data>
-		v8pstv1HbmoW3gdlKZzSqn31WHY=
-		</data>
-		<key>Assets.car</key>
-		<data>
-		X3Gd+ZAZZEICor/qcCg25tyPCt0=
-		</data>
 		<key>Headers/WuluFMSHTraficCard.h</key>
 		<data>
 		Xo7vpmbGo0P1ybeALF7E6qN3eJY=
@@ -54,138 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gDXefvxWEER6cs8axEwvVu0YZDM=
+		fGkZTIziKic8WLezjdk1MkzDwEc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		4XxhE1qqoLQLNiI7ozmUPUMyis4=
 		</data>
-		<key>WuluFMSHAddCardBeforeIntroduction.nib/objects-13.0+.nib</key>
-		<data>
-		We7igujzPiFgUARAPsbW4q7pfBA=
-		</data>
-		<key>WuluFMSHAddCardBeforeIntroduction.nib/runtime.nib</key>
-		<data>
-		tOXlQ9OawK8bVWOFLiK1Fb/c6Lk=
-		</data>
-		<key>WuluFMSHOpenCardFail.nib/objects-13.0+.nib</key>
-		<data>
-		zrIdx3jAlfvE5KpAP1Oe5GzYADU=
-		</data>
-		<key>WuluFMSHOpenCardFail.nib/runtime.nib</key>
-		<data>
-		izXzFsZJDPBzTIyJu4p853bzsuk=
-		</data>
-		<key>WuluFMSHSuccess.nib/objects-13.0+.nib</key>
-		<data>
-		vXoZsNbsBTEFMg5HQoSdadNfykE=
-		</data>
-		<key>WuluFMSHSuccess.nib/runtime.nib</key>
-		<data>
-		ynZoBrnSBNbpoo4uStxj0P2dd0Q=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>AlipaySDK.bundle/alipay_msp_back@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9QmweA7IyncTPWZIOx5ECL2ne4o=
-			</data>
-			<key>hash2</key>
-			<data>
-			pqv6sMiIl+QnblEyN3FQCDRwbxFEJpY5Roe80rSkaA4=
-			</data>
-		</dict>
-		<key>AlipaySDK.bundle/alipay_msp_refresh@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ivQn6LWpOB8BoUbNdxsIvfbJbuM=
-			</data>
-			<key>hash2</key>
-			<data>
-			eSIZGIUsqcDz03r9ISTu2jNwTz0msn0tSSEOTq8KYz0=
-			</data>
-		</dict>
-		<key>AlipaySDK.bundle/bar@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ENmQmLXuSOxBy844XKkdTedcv2Y=
-			</data>
-			<key>hash2</key>
-			<data>
-			38AV6Lw9+K+g+t7MHjtEKIJarVILLcTXm0o58ki9C3Q=
-			</data>
-		</dict>
-		<key>AlipaySDK.bundle/bridge.js</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			qRl+NWE9CzrLdlozla7OvSpq9e0=
-			</data>
-			<key>hash2</key>
-			<data>
-			XkfNduNeOBmjpouPiO/DAuKXZ+FxYVEJmuVf3BKCz3o=
-			</data>
-		</dict>
-		<key>AlipaySDK.bundle/refresh@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			MrXCB0ZUwnx4+zfw1X2jzlNdDc4=
-			</data>
-			<key>hash2</key>
-			<data>
-			mR8Iqbh2To/+bYNWFk0IbpoorNfzg31HgUB8v89EphQ=
-			</data>
-		</dict>
-		<key>AlipaySDK.bundle/refresh_click@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Q5O/60AWCbG5LfvVC3+guPjpeFs=
-			</data>
-			<key>hash2</key>
-			<data>
-			qkSv6KIv4z3l+TmK/G5Gms3oYZripYuLCK2rB2rmyhY=
-			</data>
-		</dict>
-		<key>AlipaySDK.bundle/shutdown@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Z3Jf5aw1lVPaKemSw8qXPabBLcw=
-			</data>
-			<key>hash2</key>
-			<data>
-			mWjeqq55Ym3S0vhMp13qIXpvbIkaeheRy9CnDbpcqhQ=
-			</data>
-		</dict>
-		<key>AlipaySDK.bundle/shutdown_click@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			v8pstv1HbmoW3gdlKZzSqn31WHY=
-			</data>
-			<key>hash2</key>
-			<data>
-			dE2ndHqk8MuNrgTt2yHONxfP38nq2HUgB4t2jKRl8SI=
-			</data>
-		</dict>
-		<key>Assets.car</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			X3Gd+ZAZZEICor/qcCg25tyPCt0=
-			</data>
-			<key>hash2</key>
-			<data>
-			6ez3KH/8xNZwbbXojwl0MF8vLumha9KrRqSKPm10O8E=
-			</data>
-		</dict>
 		<key>Headers/WuluFMSHTraficCard.h</key>
 		<dict>
 			<key>hash</key>
@@ -228,72 +69,6 @@
 			<key>hash2</key>
 			<data>
 			05q4S24A1UKN2fWFpcf0EWlySrC1xU2fK7wLawVE224=
-			</data>
-		</dict>
-		<key>WuluFMSHAddCardBeforeIntroduction.nib/objects-13.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			We7igujzPiFgUARAPsbW4q7pfBA=
-			</data>
-			<key>hash2</key>
-			<data>
-			k/aE1Vy2/66Y0Lp394RRhTdooiX97UqIxSPzVrqTnUk=
-			</data>
-		</dict>
-		<key>WuluFMSHAddCardBeforeIntroduction.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			tOXlQ9OawK8bVWOFLiK1Fb/c6Lk=
-			</data>
-			<key>hash2</key>
-			<data>
-			TZdSG/j6uHOeHplz0Ji09nHR+7ZuTe38MOtqPpSZhgM=
-			</data>
-		</dict>
-		<key>WuluFMSHOpenCardFail.nib/objects-13.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zrIdx3jAlfvE5KpAP1Oe5GzYADU=
-			</data>
-			<key>hash2</key>
-			<data>
-			B73R5zUrTHmeI2luJvNzjN+V8T8bLemsSk/LMYz6lxU=
-			</data>
-		</dict>
-		<key>WuluFMSHOpenCardFail.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			izXzFsZJDPBzTIyJu4p853bzsuk=
-			</data>
-			<key>hash2</key>
-			<data>
-			EXNW8iaQYvmxnwnOU+4VW6zR9QpSdgmPeeMsYNxxaeA=
-			</data>
-		</dict>
-		<key>WuluFMSHSuccess.nib/objects-13.0+.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vXoZsNbsBTEFMg5HQoSdadNfykE=
-			</data>
-			<key>hash2</key>
-			<data>
-			646K7u6QM42MxvG8+AlqXUlxVTjwDlBeo+zMKZU9ZwI=
-			</data>
-		</dict>
-		<key>WuluFMSHSuccess.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ynZoBrnSBNbpoo4uStxj0P2dd0Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			lY5DvhQ3AL9m1dHPuMKgBVRwDm4cDuHFAujS5Y/q/GM=
 			</data>
 		</dict>
 	</dict>

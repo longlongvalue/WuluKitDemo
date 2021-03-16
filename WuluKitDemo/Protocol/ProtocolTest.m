@@ -36,8 +36,11 @@
 
 #pragma mark - WuluKitPluginDelegate
 - (void)getAppSign:(GetAppSign)complete {
-    NSString *appid = @"102";
-    NSString *userid = @"2";
+    NSString *appid = @"100";
+    NSString *userid = @"";
+    if ([ProtocolTest shareInstance].isLogin) {
+        userid = @"2";
+    }
     NSString *deviceToken = @"3";
     NSString *timestamp = [self currentDateStr];
     NSString *orignalSign = [NSString stringWithFormat:@"%@%@%@%@", appid, userid, deviceToken, timestamp];
@@ -52,7 +55,20 @@
 
 - (void)registerWithRecommondName:(NSString * _Nullable)recommondName RegisterType:(NSInteger)registerType Callback:(nonnull RegisterComplete)callback {
     // TODO: 跳转登录页面进行注册登录,成功后调用callback返回wulukit sdk告知登录结果
-    callback(nil);
+    NSLog(@"registerWithRecommondName:%@", recommondName);
+    if ([_delegate respondsToSelector:@selector(showLoginView:)]) {
+        [_delegate showLoginView:^(NSError * _Nullable error) {
+            if (error) {
+                callback(error);
+                return;
+            }
+            [ProtocolTest shareInstance].isLogin = YES;
+            callback(nil);
+        }];
+    }else {
+        [ProtocolTest shareInstance].isLogin = YES;
+        callback(nil);
+    }
 }
 
 - (void)giveUserRealNameInfoWithUserName:(NSString *)userRealName idCardNumber:(NSString *)IDCardNumber telephoe:(NSString *)telephone {
