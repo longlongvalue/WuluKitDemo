@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)showLoginView:(Complete)callback;
 
+- (void)showRegisterView:(Complete)callback;
+
 @end
 
 @interface ProtocolTest : NSObject<WuluKitPluginDelegate>

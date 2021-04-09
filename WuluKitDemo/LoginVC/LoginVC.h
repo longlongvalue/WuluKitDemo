@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<LoginVCDelegate>         delegate;
 
+@property (nonatomic, assign) NSInteger                 loginType;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -9,12 +9,15 @@
 #import <WuluKit/WuluKit.h>
 #import "ProtocolTest.h"
 #import "LoginVC.h"
+#import "RegisterVC.h"
 
-@interface ViewController ()<ProtocolTestDelegate, LoginVCDelegate>
+@interface ViewController ()<ProtocolTestDelegate, LoginVCDelegate, RegisterVCDelegate>
 
-@property (nonatomic, strong) WuluKitPlugin *wuluPlugin;
+@property (nonatomic, strong) WuluKitPlugin     *wuluPlugin;
 
-@property (nonatomic, copy) Complete callback;
+@property (nonatomic, copy) Complete            callback;
+
+@property (nonatomic, assign) NSInteger         loginType;
 
 @end
 
@@ -25,7 +28,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor systemGray5Color];
     
-    [WuluKitPlugin setEnvironment:@"UAT"];
+    [WuluKitPlugin setEnvironment:@"QA"];
     
     CGFloat SCREENWIDTH = [[UIScreen mainScreen] bounds].size.width;
     CGFloat SCREENHEIGHT = [[UIScreen mainScreen] bounds].size.height;
@@ -54,11 +57,37 @@
     
 }
 
+#pragma mark - ------ 注册 ------
+- (void)showRegisterView:(Complete)callback {
+    self.loginType = 1;
+    self.callback = callback;
+    RegisterVC *registerVC = [[RegisterVC alloc] init];
+    registerVC.delegate = self;
+    [self.navigationController pushViewController:registerVC animated:YES];
+}
+
+- (void)registerResult:(NSError *)error {
+    if (error) {
+        self.callback(error);
+    } else {
+        self.callback(nil);
+    }
+    self.callback = nil;
+}
+
+- (void)goLogin {
+    [self showLoginView:self.callback];
+}
+
+#pragma mark - ------ 登录 ------
 - (void)showLoginView:(Complete)callback {
     self.callback = callback;
     LoginVC *loginVC = [[LoginVC alloc] init];
     loginVC.delegate = self;
-    [self presentViewController:loginVC animated:YES completion:nil];
+    if (self.loginType == 1) {
+        loginVC.loginType = self.loginType;
+    }
+    [self.navigationController pushViewController:loginVC animated:YES];
 }
 
 - (void)loginResult:(NSError *)error {

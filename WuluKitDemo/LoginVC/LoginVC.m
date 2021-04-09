@@ -21,14 +21,14 @@
     
     CGFloat SCREENWIDTH = [[UIScreen mainScreen] bounds].size.width;
     
-    UIButton *loginBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 50, SCREENWIDTH - 40, 40)];
+    UIButton *loginBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 250, SCREENWIDTH - 40, 40)];
     [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
     loginBtn.backgroundColor = [UIColor greenColor];
     [loginBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [loginBtn addTarget:self action:@selector(loginView) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:loginBtn];
     
-    UIButton *refeshBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 100, SCREENWIDTH - 40, 40)];
+    UIButton *refeshBtn = [[UIButton alloc] initWithFrame:CGRectMake(20, 300, SCREENWIDTH - 40, 40)];
     [refeshBtn setTitle:@"取消" forState:UIControlStateNormal];
     refeshBtn.backgroundColor = [UIColor greenColor];
     [refeshBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -41,7 +41,11 @@
     if ([_delegate respondsToSelector:@selector(loginResult:)]) {
         [_delegate loginResult:nil];
     }
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if (self.loginType == 1 && [self.navigationController.viewControllers count] > 3) {
+        [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:[self.navigationController.viewControllers count] - 3] animated:YES];
+    }else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 - (void)cancelLoginView {
@@ -49,7 +53,11 @@
         NSError *error = [NSError errorWithDomain:@"取消登录" code:9001 userInfo:nil];
         [_delegate loginResult:error];
     }
-    [self dismissViewControllerAnimated:YES completion:nil];
+    if (self.loginType == 1) {
+        [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:[self.navigationController.viewControllers count] - 3] animated:YES];
+    }else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 /*

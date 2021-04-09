@@ -56,6 +56,24 @@
 - (void)registerWithRecommondName:(NSString * _Nullable)recommondName RegisterType:(NSInteger)registerType Callback:(nonnull RegisterComplete)callback {
     // TODO: 跳转登录页面进行注册登录,成功后调用callback返回wulukit sdk告知登录结果
     NSLog(@"registerWithRecommondName:%@", recommondName);
+    if (registerType == 1) {
+        /// 注册
+        if ([_delegate respondsToSelector:@selector(showRegisterView:)]) {
+            [_delegate showRegisterView:^(NSError * _Nullable error) {
+                if (error) {
+                    callback(error);
+                    return;
+                }
+                [ProtocolTest shareInstance].isLogin = YES;
+                callback(nil);
+            }];
+        }else {
+            [ProtocolTest shareInstance].isLogin = YES;
+            callback(nil);
+        }
+        return;
+    }
+    /// 登录
     if ([_delegate respondsToSelector:@selector(showLoginView:)]) {
         [_delegate showLoginView:^(NSError * _Nullable error) {
             if (error) {
