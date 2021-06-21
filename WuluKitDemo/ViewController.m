@@ -28,7 +28,7 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor systemGray5Color];
     
-    [WuluKitPlugin setEnvironment:@"QA"];
+    [WuluKitPlugin setEnvironment:@"UAT"];
     
     CGFloat SCREENWIDTH = [[UIScreen mainScreen] bounds].size.width;
     CGFloat SCREENHEIGHT = [[UIScreen mainScreen] bounds].size.height;

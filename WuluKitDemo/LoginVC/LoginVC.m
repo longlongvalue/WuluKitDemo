@@ -41,11 +41,12 @@
     if ([_delegate respondsToSelector:@selector(loginResult:)]) {
         [_delegate loginResult:nil];
     }
-    if (self.loginType == 1 && [self.navigationController.viewControllers count] > 3) {
-        [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:[self.navigationController.viewControllers count] - 3] animated:YES];
-    }else {
-        [self.navigationController popViewControllerAnimated:YES];
-    }
+    [self.navigationController popViewControllerAnimated:YES];
+//    if (self.loginType == 1 && [self.navigationController.viewControllers count] > 3) {
+//        [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:[self.navigationController.viewControllers count] - 3] animated:YES];
+//    }else {
+//        [self.navigationController popViewControllerAnimated:YES];
+//    }
 }
 
 - (void)cancelLoginView {
@@ -53,11 +54,12 @@
         NSError *error = [NSError errorWithDomain:@"取消登录" code:9001 userInfo:nil];
         [_delegate loginResult:error];
     }
-    if (self.loginType == 1) {
-        [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:[self.navigationController.viewControllers count] - 3] animated:YES];
-    }else {
-        [self.navigationController popViewControllerAnimated:YES];
-    }
+    [self.navigationController popViewControllerAnimated:YES];
+//    if (self.loginType == 1) {
+//        [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:[self.navigationController.viewControllers count] - 3] animated:YES];
+//    }else {
+//        [self.navigationController popViewControllerAnimated:YES];
+//    }
 }
 
 /*

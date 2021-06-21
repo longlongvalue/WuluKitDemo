@@ -6,8 +6,9 @@
 //
 
 #import "RegisterVC.h"
+#import "LoginVC.h"
 
-@interface RegisterVC ()
+@interface RegisterVC ()<LoginVCDelegate>
 
 @end
 
@@ -60,9 +61,20 @@
 }
 
 - (void)goLogin {
-    if ([_delegate respondsToSelector:@selector(goLogin)]) {
-        [_delegate goLogin];
+//    if ([_delegate respondsToSelector:@selector(goLogin)]) {
+//        [_delegate goLogin];
+//    }
+    // 第二种方式，一步一步退回
+    LoginVC *loginVC = [[LoginVC alloc] init];
+    loginVC.delegate = self;
+    [self.navigationController pushViewController:loginVC animated:YES];
+}
+
+- (void)loginResult:(NSError *)error {
+    if ([_delegate respondsToSelector:@selector(registerResult:)]) {
+        [_delegate registerResult:error];
     }
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

@@ -65,6 +65,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 卡面ID
 @property (nonatomic, copy) NSString                    *skinId;
 
+/// 卡面商城地址
+@property (nonatomic, copy) NSString                    *skinMallUrl;
+
 /// 交通卡实例方法
 /// @param modelDict 字典转模型
 + (instancetype)modelWithCardDictionary:(NSDictionary *)modelDict;

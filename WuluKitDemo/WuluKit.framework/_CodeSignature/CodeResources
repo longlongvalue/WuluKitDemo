@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/WuluFMSHTraficCard.h</key>
 		<data>
-		Xo7vpmbGo0P1ybeALF7E6qN3eJY=
+		qqznrm6xs8TMtnE60oCJyqgbufE=
 		</data>
 		<key>Headers/WuluKit.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fGkZTIziKic8WLezjdk1MkzDwEc=
+		e6D2FDWP1D2XAoUTy1iXp2cSJvU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -31,11 +31,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xo7vpmbGo0P1ybeALF7E6qN3eJY=
+			qqznrm6xs8TMtnE60oCJyqgbufE=
 			</data>
 			<key>hash2</key>
 			<data>
-			2hO5VU5sN8ver2IzUUlmX3gzox20NG1pmDRyb6b6N3Y=
+			AeJbk33x92Jk6XGEW+rBIwLGtaBa19k02plg6l5uAhk=
 			</data>
 		</dict>
 		<key>Headers/WuluKit.h</key>
