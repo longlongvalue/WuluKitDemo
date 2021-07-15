@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "WuluFMSHTraficCard.h"
 
+typedef void(^CommonCallback)(NSError * _Nullable error);
 typedef void(^RegisterComplete)(NSError * _Nullable error);
 typedef void(^GetAppSign)(NSString * _Nonnull appid, NSString * _Nullable userid, NSString * _Nullable deviceToken, NSString * _Nonnull timestamp, NSString * _Nonnull appSignature, NSInteger keyIndex);
 
@@ -85,8 +86,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 显示添加交通卡页面
 /// @param parentVC WuluKit要显示的父控制器
-/// @param cxtCode 联名卡唯一标识
-- (NSError *)showAddTraficCardPageWithParentController:(UINavigationController *_Nonnull)parentVC andCxtCode:(NSString *)cxtCode;
+/// @param ctExtCode 联名卡编码
+- (NSError *)showAddTraficCardPageWithParentController:(UINavigationController *_Nonnull)parentVC andCtExtCode:(NSString *)ctExtCode;
 
 @end
 

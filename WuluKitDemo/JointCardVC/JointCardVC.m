@@ -39,7 +39,7 @@
     NSString *tempCtExtCode = @"HCYKT.HCT";
     self.wuluPlugin = [[WuluKitPlugin alloc] initialWithDelegate:[ProtocolTest shareInstance] appid:appid userId:userid deviceToken:@"3"];
     self.wuluPlugin.wxAppid = @"wx6fe739eda712ed9a";
-    NSError *error = [self.wuluPlugin showAddTraficCardPageWithParentController:self.navigationController andCxtCode:tempCtExtCode];
+    NSError *error = [self.wuluPlugin showAddTraficCardPageWithParentController:self.navigationController andCtExtCode:tempCtExtCode];
     [self.activityIndicator stopAnimating];
     if (error) {
         dispatch_async(dispatch_get_main_queue(), ^{

@@ -10,6 +10,8 @@
 
 #import <WuluKit/WuluKitPlugin.h>
 #import <WuluKit/WuluFMSHTraficCard.h>
+#import <WuluKit/WuluFMSHEncrypt.h>
+#import <WuluKit/WuluFMSHQuickRecharge.h>
 
 //! Project version number for WuluKit.
 FOUNDATION_EXPORT double WuluKitVersionNumber;

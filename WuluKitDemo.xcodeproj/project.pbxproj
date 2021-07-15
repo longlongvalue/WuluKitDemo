@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D7CD92858FFCE698590D5D7 /* libPods-WuluKitNCE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F279545D20BE0C3E96CC3CA2 /* libPods-WuluKitNCE.a */; };
 		97A47F2BA925CD229CA4086A /* libPods-WuluKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37537B58A91B01A0516ABDEC /* libPods-WuluKitDemo.a */; };
 		D432DCB82615C3BB00FE549E /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D432DCB72615C3BB00FE549E /* RegisterVC.m */; };
 		D45AC4C825011C3B00DDB5A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D471DFAA24D8F666006BF941 /* LaunchScreen.storyboard */; };
@@ -19,11 +20,33 @@
 		D471DFBA24D8F82F006BF941 /* ProtocolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D471DFB924D8F82F006BF941 /* ProtocolTest.m */; };
 		D471DFBF24D907DE006BF941 /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D471DFBE24D907DE006BF941 /* WXApiManager.m */; };
 		D471DFDD24DAA6DC006BF941 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D471DFDB24DAA6DC006BF941 /* RSAEncryptor.m */; };
-		D48FC8B626803496003FF25A /* WuluKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48FC8B526803495003FF25A /* WuluKit.framework */; };
 		D48FC8B8268034A9003FF25A /* WuluKitResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D48FC8B7268034A9003FF25A /* WuluKitResource.bundle */; };
+		D4B5A4082694480F0064C340 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B5A4072694480F0064C340 /* UserNotifications.framework */; };
+		D4B5A40A2694480F0064C340 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B5A4092694480F0064C340 /* UserNotificationsUI.framework */; };
+		D4B5A40E2694480F0064C340 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B5A40D2694480F0064C340 /* NotificationViewController.m */; };
+		D4B5A4112694480F0064C340 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4B5A40F2694480F0064C340 /* MainInterface.storyboard */; };
+		D4B5A4152694480F0064C340 /* WuluKitNCE.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D4B5A4062694480F0064C340 /* WuluKitNCE.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D4B5A41D269448590064C340 /* NotifyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B5A41C269448590064C340 /* NotifyModel.m */; };
+		D4B5A41F269448630064C340 /* WuluKitNCEAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4B5A41E269448630064C340 /* WuluKitNCEAssets.xcassets */; };
+		D4B5A4202694489A0064C340 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = D471DFDB24DAA6DC006BF941 /* RSAEncryptor.m */; };
+		D4B5A42426944B860064C340 /* ProtocolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D471DFB924D8F82F006BF941 /* ProtocolTest.m */; };
+		D4B5A450269E83CC0064C340 /* FMSHNSEProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B5A44E269E83CC0064C340 /* FMSHNSEProtocol.m */; };
+		D4B5A455269E85770064C340 /* NotificationHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B5A453269E85770064C340 /* NotificationHandle.m */; };
+		D4B5A46726A00A750064C340 /* WuluKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B5A46626A00A750064C340 /* WuluKit.framework */; };
+		D4B5A46826A00A750064C340 /* WuluKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B5A46626A00A750064C340 /* WuluKit.framework */; };
 		D4B6315926004DD700C87446 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B6315826004DD700C87446 /* LoginVC.m */; };
 		D4E2633025B99805003E3175 /* JointCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E2632F25B99805003E3175 /* JointCardVC.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4B5A4132694480F0064C340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D471DF9124D8F664006BF941 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4B5A4052694480F0064C340;
+			remoteInfo = WuluKitNCE;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		D45AC4B925010FBB00DDB5A2 /* CopyFiles */ = {
@@ -35,10 +58,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4B5A4162694480F0064C340 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D4B5A4152694480F0064C340 /* WuluKitNCE.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		012E4D45A889AA8652BFBBE9 /* Pods-WuluKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuluKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-WuluKitDemo/Pods-WuluKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		11C709386E1D4C1F09BBDB1D /* Pods-WuluKitNCE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuluKitNCE.release.xcconfig"; path = "Target Support Files/Pods-WuluKitNCE/Pods-WuluKitNCE.release.xcconfig"; sourceTree = "<group>"; };
 		37537B58A91B01A0516ABDEC /* libPods-WuluKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WuluKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8505C7130842F85684010A23 /* Pods-WuluKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuluKitDemo.release.xcconfig"; path = "Target Support Files/Pods-WuluKitDemo/Pods-WuluKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D432DCB62615C3BB00FE549E /* RegisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
@@ -62,12 +97,29 @@
 		D471DFDC24DAA6DC006BF941 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
 		D471DFE824DAB283006BF941 /* WuluKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WuluKitDemo.entitlements; sourceTree = "<group>"; };
 		D471DFE924DAB2FA006BF941 /* PassKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PassKit.framework; path = System/Library/Frameworks/PassKit.framework; sourceTree = SDKROOT; };
-		D48FC8B526803495003FF25A /* WuluKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WuluKit.framework; sourceTree = "<group>"; };
 		D48FC8B7268034A9003FF25A /* WuluKitResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WuluKitResource.bundle; sourceTree = "<group>"; };
+		D4B5A4062694480F0064C340 /* WuluKitNCE.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WuluKitNCE.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4B5A4072694480F0064C340 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		D4B5A4092694480F0064C340 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		D4B5A40C2694480F0064C340 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		D4B5A40D2694480F0064C340 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		D4B5A4102694480F0064C340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D4B5A4122694480F0064C340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4B5A41B269448590064C340 /* NotifyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyModel.h; sourceTree = "<group>"; };
+		D4B5A41C269448590064C340 /* NotifyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyModel.m; sourceTree = "<group>"; };
+		D4B5A41E269448630064C340 /* WuluKitNCEAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = WuluKitNCEAssets.xcassets; sourceTree = "<group>"; };
+		D4B5A44E269E83CC0064C340 /* FMSHNSEProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMSHNSEProtocol.m; sourceTree = "<group>"; };
+		D4B5A44F269E83CC0064C340 /* FMSHNSEProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMSHNSEProtocol.h; sourceTree = "<group>"; };
+		D4B5A453269E85770064C340 /* NotificationHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHandle.m; sourceTree = "<group>"; };
+		D4B5A454269E85770064C340 /* NotificationHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHandle.h; sourceTree = "<group>"; };
+		D4B5A456269E86FC0064C340 /* WuluKitNCE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WuluKitNCE.entitlements; sourceTree = "<group>"; };
+		D4B5A46626A00A750064C340 /* WuluKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WuluKit.framework; sourceTree = "<group>"; };
 		D4B6315726004DD700C87446 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		D4B6315826004DD700C87446 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		D4E2632E25B99805003E3175 /* JointCardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JointCardVC.h; sourceTree = "<group>"; };
 		D4E2632F25B99805003E3175 /* JointCardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JointCardVC.m; sourceTree = "<group>"; };
+		F279545D20BE0C3E96CC3CA2 /* libPods-WuluKitNCE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WuluKitNCE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3047B776A74161EC9A8742 /* Pods-WuluKitNCE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuluKitNCE.debug.xcconfig"; path = "Target Support Files/Pods-WuluKitNCE/Pods-WuluKitNCE.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +127,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48FC8B626803496003FF25A /* WuluKit.framework in Frameworks */,
+				D4B5A46726A00A750064C340 /* WuluKit.framework in Frameworks */,
 				D467E3FF2521900D00801D4E /* PhotosUI.framework in Frameworks */,
 				97A47F2BA925CD229CA4086A /* libPods-WuluKitDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4B5A4032694480F0064C340 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B5A40A2694480F0064C340 /* UserNotificationsUI.framework in Frameworks */,
+				D4B5A4082694480F0064C340 /* UserNotifications.framework in Frameworks */,
+				D4B5A46826A00A750064C340 /* WuluKit.framework in Frameworks */,
+				6D7CD92858FFCE698590D5D7 /* libPods-WuluKitNCE.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +153,9 @@
 				D467E3FE2521900D00801D4E /* PhotosUI.framework */,
 				D471DFE924DAB2FA006BF941 /* PassKit.framework */,
 				37537B58A91B01A0516ABDEC /* libPods-WuluKitDemo.a */,
+				D4B5A4072694480F0064C340 /* UserNotifications.framework */,
+				D4B5A4092694480F0064C340 /* UserNotificationsUI.framework */,
+				F279545D20BE0C3E96CC3CA2 /* libPods-WuluKitNCE.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,6 +165,8 @@
 			children = (
 				012E4D45A889AA8652BFBBE9 /* Pods-WuluKitDemo.debug.xcconfig */,
 				8505C7130842F85684010A23 /* Pods-WuluKitDemo.release.xcconfig */,
+				FD3047B776A74161EC9A8742 /* Pods-WuluKitNCE.debug.xcconfig */,
+				11C709386E1D4C1F09BBDB1D /* Pods-WuluKitNCE.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -116,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				D471DF9B24D8F664006BF941 /* WuluKitDemo */,
+				D4B5A40B2694480F0064C340 /* WuluKitNCE */,
 				D471DF9A24D8F664006BF941 /* Products */,
 				C4CF9385E2FA3D58C2C63821 /* Pods */,
 				906B7B41DF2A936E23B98436 /* Frameworks */,
@@ -126,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				D471DF9924D8F664006BF941 /* WuluKitDemo.app */,
+				D4B5A4062694480F0064C340 /* WuluKitNCE.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,8 +203,9 @@
 		D471DF9B24D8F664006BF941 /* WuluKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D4B5A46626A00A750064C340 /* WuluKit.framework */,
+				D4B5A451269E85770064C340 /* Tools */,
 				D48FC8B7268034A9003FF25A /* WuluKitResource.bundle */,
-				D48FC8B526803495003FF25A /* WuluKit.framework */,
 				D432DCAF2615C2DD00FE549E /* RegisterVC */,
 				D4B6315626004DC100C87446 /* LoginVC */,
 				D471DFE824DAB283006BF941 /* WuluKitDemo.entitlements */,
@@ -182,6 +253,56 @@
 			path = RSAEncryptor;
 			sourceTree = "<group>";
 		};
+		D4B5A40B2694480F0064C340 /* WuluKitNCE */ = {
+			isa = PBXGroup;
+			children = (
+				D4B5A456269E86FC0064C340 /* WuluKitNCE.entitlements */,
+				D4B5A44D269E83CC0064C340 /* Protocol */,
+				D4B5A41A269448590064C340 /* NotifyModel */,
+				D4B5A40C2694480F0064C340 /* NotificationViewController.h */,
+				D4B5A40D2694480F0064C340 /* NotificationViewController.m */,
+				D4B5A40F2694480F0064C340 /* MainInterface.storyboard */,
+				D4B5A41E269448630064C340 /* WuluKitNCEAssets.xcassets */,
+				D4B5A4122694480F0064C340 /* Info.plist */,
+			);
+			path = WuluKitNCE;
+			sourceTree = "<group>";
+		};
+		D4B5A41A269448590064C340 /* NotifyModel */ = {
+			isa = PBXGroup;
+			children = (
+				D4B5A41B269448590064C340 /* NotifyModel.h */,
+				D4B5A41C269448590064C340 /* NotifyModel.m */,
+			);
+			path = NotifyModel;
+			sourceTree = "<group>";
+		};
+		D4B5A44D269E83CC0064C340 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				D4B5A44F269E83CC0064C340 /* FMSHNSEProtocol.h */,
+				D4B5A44E269E83CC0064C340 /* FMSHNSEProtocol.m */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		D4B5A451269E85770064C340 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D4B5A452269E85770064C340 /* NotificationHandle */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D4B5A452269E85770064C340 /* NotificationHandle */ = {
+			isa = PBXGroup;
+			children = (
+				D4B5A453269E85770064C340 /* NotificationHandle.m */,
+				D4B5A454269E85770064C340 /* NotificationHandle.h */,
+			);
+			path = NotificationHandle;
+			sourceTree = "<group>";
+		};
 		D4B6315626004DC100C87446 /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,15 +334,36 @@
 				D471DF9724D8F664006BF941 /* Resources */,
 				4440504FC22B60A1329B9BE5 /* [CP] Copy Pods Resources */,
 				D45AC4B925010FBB00DDB5A2 /* CopyFiles */,
+				D4B5A4162694480F0064C340 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D4B5A4142694480F0064C340 /* PBXTargetDependency */,
 			);
 			name = WuluKitDemo;
 			productName = WuluKitDemo;
 			productReference = D471DF9924D8F664006BF941 /* WuluKitDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D4B5A4052694480F0064C340 /* WuluKitNCE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4B5A4192694480F0064C340 /* Build configuration list for PBXNativeTarget "WuluKitNCE" */;
+			buildPhases = (
+				8677F005D409910945B88790 /* [CP] Check Pods Manifest.lock */,
+				D4B5A4022694480F0064C340 /* Sources */,
+				D4B5A4032694480F0064C340 /* Frameworks */,
+				D4B5A4042694480F0064C340 /* Resources */,
+				52CB7A66765C7DDA072704E5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WuluKitNCE;
+			productName = WuluKitNCE;
+			productReference = D4B5A4062694480F0064C340 /* WuluKitNCE.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -233,6 +375,9 @@
 				TargetAttributes = {
 					D471DF9824D8F664006BF941 = {
 						CreatedOnToolsVersion = 12.0;
+					};
+					D4B5A4052694480F0064C340 = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
@@ -250,6 +395,7 @@
 			projectRoot = "";
 			targets = (
 				D471DF9824D8F664006BF941 /* WuluKitDemo */,
+				D4B5A4052694480F0064C340 /* WuluKitNCE */,
 			);
 		};
 /* End PBXProject section */
@@ -263,6 +409,15 @@
 				D45AC4C825011C3B00DDB5A2 /* LaunchScreen.storyboard in Resources */,
 				D471DFA724D8F664006BF941 /* Main.storyboard in Resources */,
 				D48FC8B8268034A9003FF25A /* WuluKitResource.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4B5A4042694480F0064C340 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B5A4112694480F0064C340 /* MainInterface.storyboard in Resources */,
+				D4B5A41F269448630064C340 /* WuluKitNCEAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +439,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WuluKitDemo/Pods-WuluKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52CB7A66765C7DDA072704E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WuluKitNCE/Pods-WuluKitNCE-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WuluKitNCE/Pods-WuluKitNCE-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WuluKitNCE/Pods-WuluKitNCE-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8677F005D409910945B88790 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WuluKitNCE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E9E40E18707A78CE6069B9C5 /* [CP] Check Pods Manifest.lock */ = {
@@ -319,6 +513,7 @@
 				D471DF9E24D8F664006BF941 /* AppDelegate.m in Sources */,
 				D471DFAF24D8F666006BF941 /* main.m in Sources */,
 				D471DFBF24D907DE006BF941 /* WXApiManager.m in Sources */,
+				D4B5A455269E85770064C340 /* NotificationHandle.m in Sources */,
 				D471DFBA24D8F82F006BF941 /* ProtocolTest.m in Sources */,
 				D4E2633025B99805003E3175 /* JointCardVC.m in Sources */,
 				D432DCB82615C3BB00FE549E /* RegisterVC.m in Sources */,
@@ -327,7 +522,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D4B5A4022694480F0064C340 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B5A41D269448590064C340 /* NotifyModel.m in Sources */,
+				D4B5A40E2694480F0064C340 /* NotificationViewController.m in Sources */,
+				D4B5A4202694489A0064C340 /* RSAEncryptor.m in Sources */,
+				D4B5A450269E83CC0064C340 /* FMSHNSEProtocol.m in Sources */,
+				D4B5A42426944B860064C340 /* ProtocolTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4B5A4142694480F0064C340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4B5A4052694480F0064C340 /* WuluKitNCE */;
+			targetProxy = D4B5A4132694480F0064C340 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D471DFA524D8F664006BF941 /* Main.storyboard */ = {
@@ -344,6 +559,14 @@
 				D471DFAB24D8F666006BF941 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D4B5A40F2694480F0064C340 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4B5A4102694480F0064C340 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -534,6 +757,138 @@
 			};
 			name = Release;
 		};
+		D4B5A4172694480F0064C340 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3047B776A74161EC9A8742 /* Pods-WuluKitNCE.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WuluKitNCE/WuluKitNCE.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X4M553E67P;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WuluKitDemo",
+				);
+				INFOPLIST_FILE = WuluKitNCE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"WeChatSDK\"",
+					"-l\"c++\"",
+					"-l\"sqlite3.0\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AlipaySDK\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fmsh.www.WuluKitDemo.WuluKitNCE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = WuluKitDemoNCEDev;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4B5A4182694480F0064C340 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11C709386E1D4C1F09BBDB1D /* Pods-WuluKitNCE.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WuluKitNCE/WuluKitNCE.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = X4M553E67P;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WuluKitDemo",
+				);
+				INFOPLIST_FILE = WuluKitNCE/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"MBProgressHUD\"",
+					"-l\"MJRefresh\"",
+					"-l\"Masonry\"",
+					"-l\"SDWebImage\"",
+					"-l\"WeChatSDK\"",
+					"-l\"c++\"",
+					"-l\"sqlite3.0\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AlipaySDK\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreText\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"WebKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fmsh.www.WuluKitDemo.WuluKitNCE;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = WuluKitDemoNCEDev;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -551,6 +906,15 @@
 			buildConfigurations = (
 				D471DFB324D8F666006BF941 /* Debug */,
 				D471DFB424D8F666006BF941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4B5A4192694480F0064C340 /* Build configuration list for PBXNativeTarget "WuluKitNCE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4B5A4172694480F0064C340 /* Debug */,
+				D4B5A4182694480F0064C340 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

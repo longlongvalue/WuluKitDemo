@@ -10,6 +10,9 @@
 #import "WXApiManager.h"
 #import <AlipaySDK/AlipaySDK.h>
 
+#import <UserNotifications/UserNotifications.h>
+#import "NotificationHandle.h"
+
 #define kAppKey_Wechat @"wx6fe739eda712ed9a"
 #define UniVersalLink @"https://test.nfcos.net.cn/wulukit/"
 
@@ -31,6 +34,8 @@
         NSLog(@"微信支付API注册失败");
     }
     
+    [self registerNotification:application];
+    
     return YES;
 }
 
@@ -51,5 +56,42 @@
     return YES;
 }
 
+#pragma mark - ------ 注册通知 ------
+- (void)registerNotification:(UIApplication *)application {
+    [UNUserNotificationCenter currentNotificationCenter].delegate = [NotificationHandle shareInstance];
+    
+    [[NotificationHandle shareInstance] authorizationPushNotificaton:application];
+    [[NotificationHandle shareInstance] registerNotificationCategory];
+    
+    [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
+    
+    NSString *deviceTokenString = [self hexStringWithData:deviceToken];
+    NSLog(@"deviceToken:%@", deviceTokenString);
+    
+    [[NSUserDefaults standardUserDefaults] setValue:deviceTokenString forKey:@"deviceToken"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
+    NSLog(@"获取token失败:%@\n",error.localizedDescription);
+}
+
+- (NSString *)hexStringWithData:(NSData *)data {
+    Byte *bytes = (Byte *)[data bytes];
+    NSString *hexStr=@"";
+    for(int i=0;i<[data length];i++) {
+        NSString *newHexStr = [NSString stringWithFormat:@"%x",bytes[i]&0xff];///16进制数
+        if([newHexStr length]==1){
+            hexStr = [NSString stringWithFormat:@"%@0%@",hexStr,newHexStr];
+        } else {
+            hexStr = [NSString stringWithFormat:@"%@%@",hexStr,newHexStr];
+        }
+    }
+    return hexStr;
+}
 
 @end

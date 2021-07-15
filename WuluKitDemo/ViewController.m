@@ -19,6 +19,9 @@
 
 @property (nonatomic, assign) NSInteger         loginType;
 
+/// 腰线视图
+@property (nonatomic, strong) UIViewController      *traficCardVC;
+
 @end
 
 @implementation ViewController
@@ -30,30 +33,32 @@
     
     [WuluKitPlugin setEnvironment:@"UAT"];
     
-    CGFloat SCREENWIDTH = [[UIScreen mainScreen] bounds].size.width;
-    CGFloat SCREENHEIGHT = [[UIScreen mainScreen] bounds].size.height;
-    UIScrollView *scrollView = [UIScrollView new];
-    scrollView.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT);
-    scrollView.contentSize = CGSizeMake(SCREENWIDTH, SCREENHEIGHT * 1.1);
-    [self.view addSubview:scrollView];
+//    CGFloat SCREENWIDTH = [[UIScreen mainScreen] bounds].size.width;
+//    CGFloat SCREENHEIGHT = [[UIScreen mainScreen] bounds].size.height;
+//    UIScrollView *scrollView = [UIScrollView new];
+//    scrollView.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT);
+//    scrollView.contentSize = CGSizeMake(SCREENWIDTH, SCREENHEIGHT * 1.1);
+//    [self.view addSubview:scrollView];
     
-    ProtocolTest *protocolTest = [ProtocolTest shareInstance];
-    protocolTest.delegate = self;
+//    ProtocolTest *protocolTest = [ProtocolTest shareInstance];
+//    protocolTest.delegate = self;
+//
+//    NSString *appid = @"100";
+//    NSString *userid = nil;
+//    if (protocolTest.isLogin) {
+//        userid = @"2";
+//    }
+//    // 初始化交通卡SDK
+//    self.wuluPlugin = [[WuluKitPlugin alloc] initialWithDelegate:protocolTest appid:appid userId:userid deviceToken:@"3"];
+//    if (protocolTest.isLogin) {
+//        self.wuluPlugin.wxAppid = @"wx6fe739eda712ed9a";
+//    }
+//    UIViewController *waistView = [self.wuluPlugin showWaistLinePageWithMinY:160.0];
+//    [self addChildViewController:waistView];
+//    [waistView didMoveToParentViewController:self];
+//    [scrollView addSubview:waistView.view];
     
-    NSString *appid = @"100";
-    NSString *userid = nil;
-    if (protocolTest.isLogin) {
-        userid = @"2";
-    }
-    // 初始化交通卡SDK
-    self.wuluPlugin = [[WuluKitPlugin alloc] initialWithDelegate:protocolTest appid:appid userId:userid deviceToken:@"3"];
-    if (protocolTest.isLogin) {
-        self.wuluPlugin.wxAppid = @"wx6fe739eda712ed9a";
-    }
-    UIViewController *waistView = [self.wuluPlugin showWaistLinePageWithMinY:160.0];
-    [self addChildViewController:waistView];
-    [waistView didMoveToParentViewController:self];
-    [scrollView addSubview:waistView.view];
+    [self loginOrLogout];
     
 }
 
@@ -95,8 +100,34 @@
         self.callback(error);
     } else {
         self.callback(nil);
+        [self loginOrLogout];
     }
     self.callback = nil;
+}
+
+- (void)loginOrLogout {
+    if (self.traficCardVC) {
+        [self.traficCardVC.view removeFromSuperview];
+        [self.traficCardVC removeFromParentViewController];
+        self.traficCardVC = nil;
+        self.wuluPlugin = nil;
+    }
+    // 初始化交通卡SDK
+    NSString *userid = nil;
+    NSString *appid = @"100";
+    if ([ProtocolTest shareInstance].isLogin) {
+        userid = @"2";
+    }
+    ProtocolTest *protocolTest = [ProtocolTest shareInstance];
+    protocolTest.delegate = self;
+    self.wuluPlugin = [[WuluKitPlugin alloc] initialWithDelegate:protocolTest appid:appid userId:userid deviceToken:@"3"];
+    self.wuluPlugin.wxAppid = @"wx6fe739eda712ed9a";
+    
+    UIViewController *waistView = [self.wuluPlugin showWaistLinePageWithMinY:160.0];
+    [self addChildViewController:waistView];
+    [waistView didMoveToParentViewController:self];
+    [self.view addSubview:waistView.view];
+    self.traficCardVC = waistView;
 }
 
 @end

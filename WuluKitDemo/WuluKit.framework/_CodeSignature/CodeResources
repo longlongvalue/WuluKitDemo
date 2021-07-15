@@ -4,21 +4,61 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>AlipaySDK.bundle/alipay_msp_back@2x.png</key>
+		<data>
+		9QmweA7IyncTPWZIOx5ECL2ne4o=
+		</data>
+		<key>AlipaySDK.bundle/alipay_msp_refresh@2x.png</key>
+		<data>
+		ivQn6LWpOB8BoUbNdxsIvfbJbuM=
+		</data>
+		<key>AlipaySDK.bundle/bar@2x.png</key>
+		<data>
+		ENmQmLXuSOxBy844XKkdTedcv2Y=
+		</data>
+		<key>AlipaySDK.bundle/bridge.js</key>
+		<data>
+		qRl+NWE9CzrLdlozla7OvSpq9e0=
+		</data>
+		<key>AlipaySDK.bundle/refresh@2x.png</key>
+		<data>
+		MrXCB0ZUwnx4+zfw1X2jzlNdDc4=
+		</data>
+		<key>AlipaySDK.bundle/refresh_click@2x.png</key>
+		<data>
+		Q5O/60AWCbG5LfvVC3+guPjpeFs=
+		</data>
+		<key>AlipaySDK.bundle/shutdown@2x.png</key>
+		<data>
+		Z3Jf5aw1lVPaKemSw8qXPabBLcw=
+		</data>
+		<key>AlipaySDK.bundle/shutdown_click@2x.png</key>
+		<data>
+		v8pstv1HbmoW3gdlKZzSqn31WHY=
+		</data>
+		<key>Headers/WuluFMSHEncrypt.h</key>
+		<data>
+		5fKtxDo11IBCnusDMTr+AmGr3bg=
+		</data>
+		<key>Headers/WuluFMSHQuickRecharge.h</key>
+		<data>
+		RTCR/4NKdey4+DNGkr5XY/7KBp4=
+		</data>
 		<key>Headers/WuluFMSHTraficCard.h</key>
 		<data>
 		qqznrm6xs8TMtnE60oCJyqgbufE=
 		</data>
 		<key>Headers/WuluKit.h</key>
 		<data>
-		krdpPBKkgC4GuxFnZZdIIl7x/DY=
+		EkycRNhXbP8XJg7OZBhP8MALRts=
 		</data>
 		<key>Headers/WuluKitPlugin.h</key>
 		<data>
-		pny4F/W02nPGsz0bVnecC9dRpbc=
+		WOQWMuqeERm4rGkR2ClzyffMNdo=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		e6D2FDWP1D2XAoUTy1iXp2cSJvU=
+		H6gFdfRMiqwJtfjDll0tMMThuQA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -27,6 +67,116 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>AlipaySDK.bundle/alipay_msp_back@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9QmweA7IyncTPWZIOx5ECL2ne4o=
+			</data>
+			<key>hash2</key>
+			<data>
+			pqv6sMiIl+QnblEyN3FQCDRwbxFEJpY5Roe80rSkaA4=
+			</data>
+		</dict>
+		<key>AlipaySDK.bundle/alipay_msp_refresh@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ivQn6LWpOB8BoUbNdxsIvfbJbuM=
+			</data>
+			<key>hash2</key>
+			<data>
+			eSIZGIUsqcDz03r9ISTu2jNwTz0msn0tSSEOTq8KYz0=
+			</data>
+		</dict>
+		<key>AlipaySDK.bundle/bar@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ENmQmLXuSOxBy844XKkdTedcv2Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			38AV6Lw9+K+g+t7MHjtEKIJarVILLcTXm0o58ki9C3Q=
+			</data>
+		</dict>
+		<key>AlipaySDK.bundle/bridge.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qRl+NWE9CzrLdlozla7OvSpq9e0=
+			</data>
+			<key>hash2</key>
+			<data>
+			XkfNduNeOBmjpouPiO/DAuKXZ+FxYVEJmuVf3BKCz3o=
+			</data>
+		</dict>
+		<key>AlipaySDK.bundle/refresh@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MrXCB0ZUwnx4+zfw1X2jzlNdDc4=
+			</data>
+			<key>hash2</key>
+			<data>
+			mR8Iqbh2To/+bYNWFk0IbpoorNfzg31HgUB8v89EphQ=
+			</data>
+		</dict>
+		<key>AlipaySDK.bundle/refresh_click@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q5O/60AWCbG5LfvVC3+guPjpeFs=
+			</data>
+			<key>hash2</key>
+			<data>
+			qkSv6KIv4z3l+TmK/G5Gms3oYZripYuLCK2rB2rmyhY=
+			</data>
+		</dict>
+		<key>AlipaySDK.bundle/shutdown@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z3Jf5aw1lVPaKemSw8qXPabBLcw=
+			</data>
+			<key>hash2</key>
+			<data>
+			mWjeqq55Ym3S0vhMp13qIXpvbIkaeheRy9CnDbpcqhQ=
+			</data>
+		</dict>
+		<key>AlipaySDK.bundle/shutdown_click@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			v8pstv1HbmoW3gdlKZzSqn31WHY=
+			</data>
+			<key>hash2</key>
+			<data>
+			dE2ndHqk8MuNrgTt2yHONxfP38nq2HUgB4t2jKRl8SI=
+			</data>
+		</dict>
+		<key>Headers/WuluFMSHEncrypt.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5fKtxDo11IBCnusDMTr+AmGr3bg=
+			</data>
+			<key>hash2</key>
+			<data>
+			qwzKvrXG4nz7gz9fkDNjJv4TU/Qc950+uELmFFNGBL4=
+			</data>
+		</dict>
+		<key>Headers/WuluFMSHQuickRecharge.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RTCR/4NKdey4+DNGkr5XY/7KBp4=
+			</data>
+			<key>hash2</key>
+			<data>
+			pZDR76Q0R2VoEOC2OYcXpyKOs8Jn2k6PUeEm+jnEkSs=
+			</data>
+		</dict>
 		<key>Headers/WuluFMSHTraficCard.h</key>
 		<dict>
 			<key>hash</key>
@@ -42,22 +192,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			krdpPBKkgC4GuxFnZZdIIl7x/DY=
+			EkycRNhXbP8XJg7OZBhP8MALRts=
 			</data>
 			<key>hash2</key>
 			<data>
-			SyI94TnYl1qbFEeGosOVvZ21tTanunQfT4f42LaWt6A=
+			pw6QlLcFoovRZOewWKgEQbA3RtXTm1NLWqGj3s8AGjo=
 			</data>
 		</dict>
 		<key>Headers/WuluKitPlugin.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pny4F/W02nPGsz0bVnecC9dRpbc=
+			WOQWMuqeERm4rGkR2ClzyffMNdo=
 			</data>
 			<key>hash2</key>
 			<data>
-			WZshSzLNftYlehkRlhIOtVQwS2oOPd1gdqDo3Zk8ghU=
+			Sh+nZc1UIOaEIwORUJo6jVml/rtV7t9IzwLvYWRCooI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
