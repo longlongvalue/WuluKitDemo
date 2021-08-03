@@ -13,6 +13,10 @@
 		<string>merchant.com.fmsh.motnjdev</string>
 		<string>merchant.com.fmsh.motnjuat</string>
 	</array>
+	<key>com.apple.developer.pass-type-identifiers</key>
+	<array>
+		<string>$(TeamIdentifierPrefix)pass.com.fmsh.www.wulukit</string>
+	</array>
 	<key>com.apple.developer.payment-pass-provisioning</key>
 	<true/>
 </dict>

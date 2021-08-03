@@ -25,7 +25,11 @@ typedef void(^completion)(NSError * _Nullable error);
 
 @interface WuluFMSHQuickRecharge : NSObject
 
-- (instancetype)initialWithDelegate:(id<WuluFMSHQuickRechargeDelegate>)delegate;
+/// 快捷充值入口
+/// @param delegate 实现代理的对象
+/// @param dpanCode 要充值的卡dpanCode（校验本地卡是否存在）
+/// @param callback 错误信息回调方法
+- (instancetype)initialWithDelegate:(id<WuluFMSHQuickRechargeDelegate>)delegate dpanCode:(NSString *)dpanCode completion:(completion)callback;
 
 /// 快捷充值（仅支持Apple Pay）
 /// @param parentVc 显示充值页面的父控制器

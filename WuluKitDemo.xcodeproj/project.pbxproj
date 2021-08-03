@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		6D7CD92858FFCE698590D5D7 /* libPods-WuluKitNCE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F279545D20BE0C3E96CC3CA2 /* libPods-WuluKitNCE.a */; };
 		97A47F2BA925CD229CA4086A /* libPods-WuluKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37537B58A91B01A0516ABDEC /* libPods-WuluKitDemo.a */; };
+		D41B463B26B779CF006960CC /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D471DFE924DAB2FA006BF941 /* PassKit.framework */; };
+		D41B463C26B77B17006960CC /* PassKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D471DFE924DAB2FA006BF941 /* PassKit.framework */; };
+		D41B464A26B7DD43006960CC /* WuluKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41B464926B7DD43006960CC /* WuluKit.framework */; };
+		D41B464B26B7DD43006960CC /* WuluKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41B464926B7DD43006960CC /* WuluKit.framework */; };
 		D432DCB82615C3BB00FE549E /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D432DCB72615C3BB00FE549E /* RegisterVC.m */; };
 		D45AC4C825011C3B00DDB5A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D471DFAA24D8F666006BF941 /* LaunchScreen.storyboard */; };
 		D467E3FF2521900D00801D4E /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D467E3FE2521900D00801D4E /* PhotosUI.framework */; };
@@ -32,8 +36,6 @@
 		D4B5A42426944B860064C340 /* ProtocolTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D471DFB924D8F82F006BF941 /* ProtocolTest.m */; };
 		D4B5A450269E83CC0064C340 /* FMSHNSEProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B5A44E269E83CC0064C340 /* FMSHNSEProtocol.m */; };
 		D4B5A455269E85770064C340 /* NotificationHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B5A453269E85770064C340 /* NotificationHandle.m */; };
-		D4B5A46726A00A750064C340 /* WuluKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B5A46626A00A750064C340 /* WuluKit.framework */; };
-		D4B5A46826A00A750064C340 /* WuluKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B5A46626A00A750064C340 /* WuluKit.framework */; };
 		D4B6315926004DD700C87446 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B6315826004DD700C87446 /* LoginVC.m */; };
 		D4E2633025B99805003E3175 /* JointCardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E2632F25B99805003E3175 /* JointCardVC.m */; };
 /* End PBXBuildFile section */
@@ -76,6 +78,7 @@
 		11C709386E1D4C1F09BBDB1D /* Pods-WuluKitNCE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuluKitNCE.release.xcconfig"; path = "Target Support Files/Pods-WuluKitNCE/Pods-WuluKitNCE.release.xcconfig"; sourceTree = "<group>"; };
 		37537B58A91B01A0516ABDEC /* libPods-WuluKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WuluKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8505C7130842F85684010A23 /* Pods-WuluKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WuluKitDemo.release.xcconfig"; path = "Target Support Files/Pods-WuluKitDemo/Pods-WuluKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D41B464926B7DD43006960CC /* WuluKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WuluKit.framework; sourceTree = "<group>"; };
 		D432DCB62615C3BB00FE549E /* RegisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
 		D432DCB72615C3BB00FE549E /* RegisterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
 		D467E3FE2521900D00801D4E /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
@@ -113,7 +116,6 @@
 		D4B5A453269E85770064C340 /* NotificationHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHandle.m; sourceTree = "<group>"; };
 		D4B5A454269E85770064C340 /* NotificationHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHandle.h; sourceTree = "<group>"; };
 		D4B5A456269E86FC0064C340 /* WuluKitNCE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WuluKitNCE.entitlements; sourceTree = "<group>"; };
-		D4B5A46626A00A750064C340 /* WuluKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WuluKit.framework; sourceTree = "<group>"; };
 		D4B6315726004DD700C87446 /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		D4B6315826004DD700C87446 /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		D4E2632E25B99805003E3175 /* JointCardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JointCardVC.h; sourceTree = "<group>"; };
@@ -127,8 +129,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4B5A46726A00A750064C340 /* WuluKit.framework in Frameworks */,
+				D41B463C26B77B17006960CC /* PassKit.framework in Frameworks */,
 				D467E3FF2521900D00801D4E /* PhotosUI.framework in Frameworks */,
+				D41B464A26B7DD43006960CC /* WuluKit.framework in Frameworks */,
 				97A47F2BA925CD229CA4086A /* libPods-WuluKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +141,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4B5A40A2694480F0064C340 /* UserNotificationsUI.framework in Frameworks */,
+				D41B463B26B779CF006960CC /* PassKit.framework in Frameworks */,
 				D4B5A4082694480F0064C340 /* UserNotifications.framework in Frameworks */,
-				D4B5A46826A00A750064C340 /* WuluKit.framework in Frameworks */,
+				D41B464B26B7DD43006960CC /* WuluKit.framework in Frameworks */,
 				6D7CD92858FFCE698590D5D7 /* libPods-WuluKitNCE.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,7 +207,7 @@
 		D471DF9B24D8F664006BF941 /* WuluKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D4B5A46626A00A750064C340 /* WuluKit.framework */,
+				D41B464926B7DD43006960CC /* WuluKit.framework */,
 				D4B5A451269E85770064C340 /* Tools */,
 				D48FC8B7268034A9003FF25A /* WuluKitResource.bundle */,
 				D432DCAF2615C2DD00FE549E /* RegisterVC */,

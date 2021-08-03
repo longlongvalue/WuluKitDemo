@@ -16,35 +16,24 @@
 
 @interface NotificationViewController () <UNNotificationContentExtension>
 
-@property (nonatomic, strong) UIView                    *paymentView;
-
-@property (nonatomic, strong) UIView                    *resultView;
+@property (nonatomic, strong) UIView                    *contentView;
 
 @property (nonatomic, strong) UILabel                   *rechargeMoneyLb;
 
 @property (nonatomic, strong) NotifyModel               *notificationModel;
 
-/// sdk实例
 @property (nonatomic, strong) WuluFMSHQuickRecharge     *quickRecharge;
 
 @end
 
 @implementation NotificationViewController
 
-- (UIView *)paymentView {
-    if (!_paymentView) {
-        _paymentView = [[UIView alloc] initWithFrame:self.view.bounds];
-        _paymentView.backgroundColor = [UIColor whiteColor];
+- (UIView *)contentView {
+    if (!_contentView) {
+        _contentView = [[UIView alloc] initWithFrame:self.view.bounds];
+        _contentView.backgroundColor = [UIColor whiteColor];
     }
-    return _paymentView;
-}
-
-- (UIView *)resultView {
-    if (!_resultView) {
-        _resultView = [[UIView alloc] initWithFrame:self.view.bounds];
-        _resultView.backgroundColor = [UIColor whiteColor];
-    }
-    return _resultView;
+    return _contentView;
 }
 
 - (void)viewDidLoad {
@@ -63,19 +52,41 @@
     }
     
     self.notificationModel = [NotifyModel modelWithDictionary:cardInfo];
-    // 移除旧视图
-    [self.view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-    // 重新添加新视图
-    [self.view addSubview:self.paymentView];
-    [self setUpPaymentPageUI];
+    [self.view addSubview:self.contentView];
+    
+    UIActivityIndicatorView *activity = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleLarge];
+    activity.center =CGPointMake(CGRectGetWidth(self.view.frame) /2, CGRectGetHeight(self.view.frame) /2);
+    activity.transform = CGAffineTransformMakeScale(2, 2);
+    activity.color = [UIColor grayColor];
+    activity.hidesWhenStopped = YES;
+    [activity startAnimating];
+    [self.contentView addSubview:activity];
+    
+    
+    // 初始化快捷充值对象
+    self.quickRecharge = [[WuluFMSHQuickRecharge alloc] initialWithDelegate:[FMSHNSEProtocol shareInstance] dpanCode:self.notificationModel.dpanCode completion:^(NSError * _Nullable error) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [activity stopAnimating];
+            // 移除旧视图
+            [self.contentView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+            if (error) {
+                // 错误视图
+                [self setUpResultPageUI:NO tipText:error.domain];
+                return;
+            }
+            // 支付视图
+            [self setUpPaymentPageUI];
+        });
+    }];
 }
 
 #pragma mark - ------ 支付页面 ------
 - (void)setUpPaymentPageUI {
+    // 该支付金额数据可从后端获取然后本地缓存
     NSArray *moneyArray = [NSArray arrayWithObjects:@"10", @"20", @"50", nil];
     CGFloat viewWidth = CGRectGetWidth(self.view.frame);
     CGFloat marginY = 20.0;
-    // 卡面图片
+    // 卡面图片，可以使用URL地址加缓存策略
     UIImageView *cardFaceIv = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"3xdigitalcard"]];
     CGFloat cfIvW = CGRectGetWidth(self.view.frame) / 3.0 * 2.18;
     CGFloat cfIvH = cfIvW / 3.0 * 1.9;
@@ -83,7 +94,7 @@
     cardFaceIv.frame = CGRectMake(cfIvX, marginY, cfIvW, cfIvH);
     cardFaceIv.layer.cornerRadius = 10;
     cardFaceIv.layer.masksToBounds = YES;
-    [self.paymentView addSubview:cardFaceIv];
+    [self.contentView addSubview:cardFaceIv];
     // 付款金额
     CGFloat moneyPreLbY = CGRectGetMaxY(cardFaceIv.frame) + marginY;
     CGFloat moneyPreOffsetX = 25.0;
@@ -93,14 +104,14 @@
     moneyPreLb.text = moneyPreLbStr;
     moneyPreLb.textAlignment = NSTextAlignmentRight;
     moneyPreLb.font = [UIFont systemFontOfSize:20];
-    [self.paymentView addSubview:moneyPreLb];
+    [self.contentView addSubview:moneyPreLb];
     
     NSString *moneyLbStr = [moneyArray firstObject];
     UILabel *moneyLb = [UILabel new];
     moneyLb.frame = CGRectMake(CGRectGetMaxX(moneyPreLb.frame), moneyPreLbY, viewWidth / 2.0 + moneyPreOffsetX, 40);
     moneyLb.font = [UIFont boldSystemFontOfSize:50];
     moneyLb.text = moneyLbStr;
-    [self.paymentView addSubview:moneyLb];
+    [self.contentView addSubview:moneyLb];
     self.rechargeMoneyLb = moneyLb;
     // 计算两个宽
 //    CGSize moneyPreLbSize = [moneyPreLb sizeThatFits:CGSizeMake(MAXFLOAT, MAXFLOAT)];
@@ -113,7 +124,7 @@
     // 金额分割线
     UIView *lineView = [[UIView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(moneyLb.frame) + marginY, viewWidth, 0.5)];
     lineView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.1];
-    [self.paymentView addSubview:lineView];
+    [self.contentView addSubview:lineView];
     
     // 金额选项按钮
     CGFloat moneyBtnMarginX = 0;
@@ -126,7 +137,7 @@
         [moneyBtn setTitle:[NSString stringWithFormat:@"¥%@", obj] forState:UIControlStateNormal];
         [moneyBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [moneyBtn addTarget:self action:@selector(moneyBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
-        [self.paymentView addSubview:moneyBtn];
+        [self.contentView addSubview:moneyBtn];
     }];
     // ApplePay支付按钮
     PKPaymentButtonType buttonStyle = PKPaymentButtonTypeTopUp;
@@ -134,19 +145,11 @@
     [applePayBtn addTarget:self action:@selector(applePayClicked) forControlEvents:UIControlEventTouchUpInside];
     applePayBtn.layer.cornerRadius = 8.0;
     applePayBtn.frame = CGRectMake(20, moneyBtnY + moneyBtnH, viewWidth - 40, 45);
-    [self.paymentView addSubview:applePayBtn];
+    [self.contentView addSubview:applePayBtn];
 }
 #pragma mark - ------ 支付按钮被点击 ------
 - (void)applePayClicked {
     NSLog(@"支付按钮被点击");
-    // 移除旧视图
-//    [self.view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-//    // 重新添加新视图
-//    [self.view addSubview:self.resultView];
-//    [self setUpResultPageUI:YES tipText:nil];
-    if (!self.quickRecharge) {
-        self.quickRecharge = [[WuluFMSHQuickRecharge alloc] initialWithDelegate:[FMSHNSEProtocol shareInstance]];
-    }
     
     [self.quickRecharge quickRechargeWithParentVc:self rechargeAmount:[self.rechargeMoneyLb.text integerValue] * 100 dpanCode:self.notificationModel.dpanCode ctExtCode:self.notificationModel.ctExtCode completion:^(NSError * _Nullable error) {
         BOOL isSuccess = NO;
@@ -155,13 +158,12 @@
         }
         dispatch_async(dispatch_get_main_queue(), ^{
             // 移除旧视图
-            [self.view.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+            [self.contentView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
             // 重新添加新视图
-            [self.view addSubview:self.resultView];
+            [self.view addSubview:self.contentView];
             [self setUpResultPageUI:isSuccess tipText:error.domain];
         });
     }];
-    
 }
 
 #pragma mark - ------ 金额被点击 ------
@@ -191,14 +193,13 @@
     CGFloat cfIvH = cfIvW;
     CGFloat cfIvX = (viewWidth - cfIvW) / 2.0;
     resultIcon.frame = CGRectMake(cfIvX, 20, cfIvW, cfIvH);
-    [self.resultView addSubview:resultIcon];
+    [self.contentView addSubview:resultIcon];
     // 支付成功文字
-    UILabel *resultLb = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(resultIcon.frame) + 10, viewWidth, 60)];
+    UILabel *resultLb = [[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(resultIcon.frame) + 10, viewWidth, 30)];
     resultLb.text = resultTipText;
     resultLb.font = [UIFont systemFontOfSize:20];
-    resultLb.numberOfLines = 0;
     resultLb.textAlignment = NSTextAlignmentCenter;
-    [self.resultView addSubview:resultLb];
+    [self.contentView addSubview:resultLb];
     // 支付成功按钮
     UIButton *resultBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     CGFloat marginX = 20.0;
@@ -209,12 +210,13 @@
     [resultBtn setBackgroundColor:[UIColor colorNamed:@"MainPage"]];
     [resultBtn addTarget:self action:@selector(completeClicked) forControlEvents:UIControlEventTouchUpInside];
     resultBtn.layer.cornerRadius = 8.0;
-    [self.resultView addSubview:resultBtn];
+    [self.contentView addSubview:resultBtn];
 }
 
 - (void)completeClicked {
+    // 可根据成功失败决定是否移除通知
 //    UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
-//            UNUserNotificationCenter.current().removeAllDeliveredNotifications()
+//    UNUserNotificationCenter.current().removeAllDeliveredNotifications()
     [self.extensionContext dismissNotificationContentExtension];
 }
 
